@@ -1,0 +1,40 @@
+tweetos
+{
+	attributs statiques:
+		+les clés d'auth api
+		+db : contient la bdd tweetos
+		+collection : ts les tweets de la bdd
+		+connexion=tweepy.API(auth)
+	attributs d'instance:
+		+data : les tweets recuperé dans la session actuelle
+}
+
+
+connexion()
+{
+	attributs:
+	+api : l api de tweepy
+}
+
+
+tweetosUser(tweetos)
+{
+	attributs:
+		+data: tweets (et non pas des Json !!) d un utlisateur recuperes grace a
+			1) tweetos.connexion.timeline
+			2) tweets.instanciatelist : pour instancier les éléments d'une liste en objet 
+
+
+tweets(Object)
+{
+	attiributs:
+		+ts les attributs d un twwets (les plus pertinants)
+	
+	methods :
+		+store() :pour stocker le tweets ds notre bd
+		+static instanciateList(collection_de_json,destination): creer un objet tweets pr chaque json de collection et le mets dans destination
+		+static storeList(liste_de_tweets): effecture store() sur chaque tweet de la liste
+}
+
+
+

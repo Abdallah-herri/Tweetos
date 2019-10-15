@@ -1,0 +1,15 @@
+DirectoryIndex app.py
+ServerSignature Off
+AddHandler cgi-script .py
+Options +ExecCGI
+
+<Files *.py>
+order deny,allow
+deny from all
+</Files>
+
+<Files app.py>
+Allow From All
+Satisfy Any
+</Files>
+

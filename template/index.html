@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Accueil{% endblock %}
+{% block content %}
+<section id="index">
+	{% if is_posted %}
+		{% if is_success %}
+	<p class="sucess">Les tweets ont bien été importés</p>
+		{% else %}
+	<p class="error">Impossible d'importer les tweets</p>
+		{% endif %}
+	{% endif %}
+
+	<div class="hide" id="tweets">{{tweets}}</div>
+	<div id="map" class="leaftlet_map"></div>
+	<form method="post" action="app.py?p=index">
+		<p>
+			<span><input type="text" name="name" placeholder="Twitter username"></span>
+			<span><input type="submit" name="submit" value="Extraire"></span>
+		</p>
+	</form>
+</section>
+{% endblock %}

@@ -1,0 +1,5 @@
+browse_dir(path,listeResultat) mets ds liste resultat tous les fichers dur dossier pointe par path
+catch_files(path,ext,callback) execute la fonction de cb sur chque fichier (ayant l extension ext) du repertoir pointe par path
+
+/!\ pour stocker des objets issu d'une classe utiliser la fonction suivante (includes/mongo_normalize) :
+normalize(obj)

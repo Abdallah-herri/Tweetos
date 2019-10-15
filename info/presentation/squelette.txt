@@ -1,0 +1,15 @@
+presentation - intro (jérémy)
+problematique 1 min (yanis)
+presentation de l algorithme (DIAGRAMME D ACTIVITE) 30SEC (abdellah)
+detail des etapes:
+      	traitement
+		-REQUETES GEONAMES (CHOIX GEONAME, FORMAT DES REQUETES , FORMAT DES REPONSES) 1MIN (yanis)
+		-PARSER 1:30MIN (ramzi)
+		-CHOIX DES PLACES 1MIN (yanis)
+		-FILTRER LES PLACES 1:30MIN (jérémy)
+		-ENLVER LES PLACES QUI EN CONTIENNENT D'AUTRES 30SEC (abdellah) 
+		-REGROUPER LES PLACES 1:30MIN (thziri)
+evaluation statistique 2MIN (ramzi)
+choix technique 2MIN (abdellah)
+démonstration 1:30MIN (thiziri)
+conclusion 1:30MIN (jérémy)

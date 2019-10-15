@@ -1,0 +1,5 @@
+Regarder classes 2 (partie Page)
+pour plus d'information sur le fonctionnement de jinja2, regarder la doc complète (pas trop utile en principe):
+http://jinja.pocoo.org/docs/2.10/
+
+Vous pouvez aussi prendre exemple sur /src/pages/test.py associé au fichier /template/test.html (et regarder aussi /template/base.html)

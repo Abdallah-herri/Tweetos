@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Page test{% endblock %}
+{% block content %}
+<p>OK TEST</p>
+
+{% for item in ok %}
+<p>{{ item.a }} {{item.b}} {{item.c}}</p>
+{% endfor %}
+
+<br><br><br><br>
+
+{{ok2}}
+
+<br><br><br><br>
+
+<div style="margin-left:10px">
+<p style="font-weight:bold; font-size:16px; font-family: arial">Étape 1 (récupérer une phrase) :</p>
+<p>{{sentence}}</p>
+<br>
+
+<p style="font-weight:bold; font-size:16px; font-family: arial">Étape 2 (découpage) :</p>
+<p>{{tokens}}</p>
+<br>
+
+<p style="font-weight:bold; font-size:16px; font-family: arial">Étape 3 (TAGS) :</p>
+<p>{{tagged}}</p>
+<br>
+
+<p style="font-weight:bold; font-size:16px; font-family: arial">optionnelle - Étape 4 (créer un arbre) :</p>
+<p>{{tree}}</p>
+<br>
+</div>
+
+{% endblock %}

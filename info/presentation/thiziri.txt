@@ -1,0 +1,1 @@
+mongoimport --db tweetos --collection tweet <tweetos.json

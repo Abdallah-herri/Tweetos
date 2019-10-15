@@ -1,0 +1,41 @@
+request()
+{
+	attributs:
+		-__GET : objet quivalent au tableau $_GET  
+		-__POST : objet quivalent au tableau $_POST 
+		-data : contient les donnees de __GET ou __POST
+	constructeur :
+		init(data)
+	mathodes:
+		getAll() :retourne ts l objet data
+		get(cle)
+		isset(cle)
+		static _GET() : retourne l objet __GET si il est non null sion le creer
+		static _POST(): //        / /    __POST //    /    /   /   /  /    / 
+}
+
+RequestGET(Request) : //on l utlise pas directment 
+{
+	instancie l objet GET une seule fois
+}
+
+RequestPOST(Request) : //on l utilise pas directement 
+{
+	instancie l objet POST une seule fois 
+}
+
+Page
+{
+	Chaque fichier du répertoire /src/pages/ déclare une classes Page
+	Pour chacune de ces classes, il doit y avoir une méthode static action prenant en paramètre un template
+	Le corp de cette méthode sera le script python qui sera exécuté quand l'utilisateur voudra se rendre sur la page en question par le biais de app.py?=nom_page
+	Pour générer l'affichage de la page par le biais du template,
+		il faut appeler la méthode render sur le template et lui passer en argument un dictionnaire associant un nom de variable à une valeur
+		(valeur qui peut êttre de type primitif, un tableau, un dictionnaire, un objet issu d'une classe, un tableau d'objet...)
+		enfin il faut faire un return de la valeur de retour (render = template.render(...) \n return render)
+	ps: pour chaque fichier dans /src/pages/ il existe un fichier dans /template/ portant le même nom (avec l'extension .html au lieu de .py) représentant un template respectant la syntaxe de jinja2
+	ps2: le HTML avec jinja2 http://jinja.pocoo.org/docs/2.10/templates/
+}
+
+
+

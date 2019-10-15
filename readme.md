@@ -1,0 +1,2 @@
+  
+Projet TER consiste à réaliser en Python une approche pour pouvoir analyser le contenu des messages et de rechercher s’il existe des correspondances dans la base de données ouverte Geonameafin de faire des propositions de géolocalisation.

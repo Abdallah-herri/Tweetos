@@ -1,0 +1,21 @@
+section#content > section#index {
+	margin: 50px;
+}
+
+section#content > section#index input[type="text"] {
+	width: 65%;
+}
+
+section#content > section#index input[type="submit"] {
+	width: 30%;
+}
+
+section#content > section#index form p {
+	margin-top: 30px;
+	text-align: center;
+	width: 100%;
+}
+
+section#content > section#index form p > span {
+	margin: 0 5px;
+}

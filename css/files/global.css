@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: calibri;
+}
+
+.hide {
+	display: none;
+}
+
+input {
+	height: 30px;
+	padding: 5px;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+}
+
+input:hover {
+	border: 1px solid #DDD;
+}
+
+input[type="submit"], input[type="button"] {
+	background-color: #EA5560;
+	border: 0;
+	color: #FFFFFF;
+}

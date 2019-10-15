@@ -1,0 +1,17 @@
+Pour installer la totalité des fonctionnalités de NLTK, faire :
+ouvrir le terminal dans libraries, et exécuter la commande suivante :
+python -m nltk.downloader -d ../data/nltk_data all
+pip3 install numpy -t . 
+
+(vous pouvez supprimer le dossier numpy-1.14.2.dist-info)
+
+ps : laisser tourner en fond ça va être long
+
+Pour installer les fonctionnalités que l'on utilise dans NLTK faire :
+python -m nltk.downloader -d ../data/nltk_data punkt
+python -m nltk.downloader -d ../data/nltk_data averaged_perceptron_tagger
+python -m nltk.downloader -d ../data/nltk_data maxent_ne_chunker
+python -m nltk.downloader -d ../data/nltk_data words
+
+ps : vous pouvre supprimer tous les fichier zip dans data/nltk_data pour libérer de l'espace
+

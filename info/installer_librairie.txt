@@ -1,0 +1,4 @@
+Ouvrir le terminal dans le dossier répertoriant l'ensemble des librairies du projet,
+et exécuter la commande suivante :
+
+pip3 install nom_de_la_librairie -t . 

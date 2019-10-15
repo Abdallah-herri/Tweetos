@@ -1,0 +1,13 @@
+changer ke fichier index 
+- envoyer l'objet tt entier au lieu de texte seulment
+- changer les structures des tweets(créer une classe estimation (regarder le diagramme de classe) pour les tweets de type 2)
+ajouter condition ( afficher les boutons seulment si le tweet est de type 2)
+ajouter "onclick event" pour les butons like et dislike
+
+
+
+
+
+t1
+t2
+t3

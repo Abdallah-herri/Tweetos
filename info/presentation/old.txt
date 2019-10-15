@@ -1,0 +1,40 @@
+    \subsection{récupération des tweets}
+    \begin{frame}{récupération des tweets}
+    \begin{itemize}
+        \item \large Il existe deux méthodes pour récupérer les tweets :
+        \begin{itemize}
+        	\item[-] \normalsize \textbf{par utilisateur :} récupération des tweets d'une seule personne .
+        	\item[-] \normalsize \textbf{Aléatoirement :} récupération aléatoire des dérniers tweets en temps réel.\newline
+        \end{itemize}
+    \end{itemize}
+
+    \begin{itemize}
+    	\item \large Après la récupération, on trouve deux types de tweets :
+      	\begin{itemize}
+        	\item[-] \normalsize \textbf{géo-localisée :} on les stocke directement dans la BD.
+        	\item[-] \normalsize \textbf{non géo-localisée :} on géo-localise ces tweets en utilisant notre algorithme.
+        \end{itemize}
+     \end{itemize}
+
+    
+    \end{frame}
+    
+
+    \subsection{Stockage}
+    \begin{frame}{Stockage}
+     \begin{itemize}
+       \item Après avoir términé le traitement, l'algorithme retourne des tweets sous forme  \textbf{"JSON"}.
+       \item On stocke ces tweets dans une Base de données pour les afficher dans dans l'interface web.
+       
+       \item Le SGBD choisi pour stocker les tweets : \textbf{MongoDB}.  
+       \item avantages de MongoDB : 
+       \begin{itemize}
+           \item [-] on avait pas besoin d’un système de base de données relationnel.
+           \item [-] il présente les données au format \textbf{"JSON"}.
+           \item [-] facile à manipuler en utilisant Python.
+           \item [-] le plus adapté a nos besoins.
+           
+       \end{itemize}
+     \end{itemize}
+    
+    \end{frame}
